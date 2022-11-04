@@ -8,7 +8,6 @@
 body{
     background: #080808;
     color: #fff;
-
 }
 #header{
     width: 100%;
@@ -16,11 +15,9 @@ body{
     background-image: url(images/background.png);
     background-size: cover;
     background-position: center;
-
 }
 .container{
     padding: 10px 10%;
-
 }
 nav{
     display: flex;
@@ -57,13 +54,13 @@ nav ul li a::after{
 nav ul li a:hover::after{
     width:100%
 }
-header-text{
-    margin: 20%;
+.header-text{
+    margin-top: 20%;
     font-size: 30px;
 
 }
 
-header-text h1{
+.header-text h1{
     font-size: 60px;
     margin-top: 20px;
 }
@@ -117,7 +114,6 @@ header-text h1{
     bottom: -8px;
     transition: 0.5s;
 }
-/*dont think this is working*/
 .tab-links.active-link::after{
     width: 50%;
 }
@@ -138,7 +134,7 @@ header-text h1{
 
 }
 /* --------------services-------*/
-#sservice{
+.services{
     padding: 30px 0;
 }
 .services-list{
@@ -176,7 +172,7 @@ header-text h1{
     transform: translateY(-10px);
 }
 /*---------------portfoilio------------*/
-#portfolio{
+.portfolio{
     padding: 50px 0;
 }
 .work-list{
@@ -299,4 +295,34 @@ form input, form textarea{
     color: #fff;
     font-size: 18px;
     border-radius: 6px;
+}
+form .btn.btn2{
+    padding: 14px 60px;
+    font-size: 18px;
+    margin-top: 20px;
+    cursor: pointer;
+}
+.copyright{
+    width: 100%;
+    text-align: center;
+    padding: 25px 0;
+    background: #262626;
+    font-weight: 300;
+    margin-top: 20px;
+}
+.copyright i{
+    color: #ff004f;
+}
+/* ----------------css for small screen-----this doenst work at all---- */
+@media only screen and (max-width: 600px){
+    #header{
+        background-image: url(images/phone-background.png);
+    }
+    .header-text{
+        margin-top: 100%;
+        font-size: 15px;
+    }
+    .header-text h1{
+        font-size: 30px;
+    }
 }
