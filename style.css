@@ -134,7 +134,7 @@ nav ul li a:hover::after{
 
 }
 /* --------------services-------*/
-.services{
+#services{
     padding: 30px 0;
 }
 .services-list{
@@ -172,7 +172,7 @@ nav ul li a:hover::after{
     transform: translateY(-10px);
 }
 /*---------------portfoilio------------*/
-.portfolio{
+#portfolio{
     padding: 50px 0;
 }
 .work-list{
